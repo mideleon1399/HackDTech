@@ -41,7 +41,7 @@ const MapChart = () => {
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill={colorScale(cur ? cur.norm_cases :  '#ffedea')}
+                  fill={colorScale(cur ? cur.norm_cases :  '#EEE')}
                 />
               );
             })
