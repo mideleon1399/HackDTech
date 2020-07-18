@@ -6,7 +6,7 @@ import { csv } from "d3-fetch";
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";
 
 const colorScale = scaleLinear()
-  .domain([0,1])
+  .domain([0,1000000])
   .range([
     "#ffedea",
     "#782618"
@@ -34,10 +34,10 @@ const MapChart = () => {
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill={colorScale(cur ? cur.norm_cases :  '#EEE')}
+                  fill={colorScale(cur ? cur.cases :  '#782618')}
 
                 />
-              );n
+              );
             })
           }
         </Geographies>
