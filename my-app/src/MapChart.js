@@ -37,7 +37,7 @@ const MapChart = () => {
                   fill={colorScale(cur ? cur.norm_cases :  '#EEE')}
 
                 />
-              );
+              );n
             })
           }
         </Geographies>
