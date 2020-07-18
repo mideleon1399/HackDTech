@@ -24,8 +24,8 @@ const MapChart = () => {
 
   useEffect(() => {
     // https://www.bls.gov/lau/
-    csv("../my-app/public/corona.csv").then(county => {
-      setData(county);
+    csv("/corona.csv").then(counties => {
+      setData(counties);
     });
   }, []);
 
@@ -36,12 +36,13 @@ const MapChart = () => {
           {({ geographies }) =>
             geographies.map(geo => {
               const cur = data.find(s => s.id === geo.id);
-              console.log(cur);
+             console.log(cur)
               return (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
                   fill={colorScale(cur ? cur.norm_cases :  '#EEE')}
+
                 />
               );
             })

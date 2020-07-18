@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import NavBar from './NavBar'
 import MapChart from "./MapChart";
+import Intro from "./intro";
+import Resources from "./resources";
+import {Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <div className="title">
-          This is Mia and Bailey's website
-        </div>
-        <div>
-      <MapChart />
-    </div>
-       
-      </header>
-    </div>
-  );
+      <main>
+        <NavBar />
+          <Switch>
+              <Route path="/" component={Intro} exact />
+              <Route path="/map" component={MapChart} />
+              <Route path="/resources" component={Resources} />
+              <Route component={Error} />
+          </Switch>
+      </main>
+  )
 }
 
 export default App;
