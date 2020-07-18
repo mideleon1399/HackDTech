@@ -1,20 +1,25 @@
 .link{
     width: 33%;
  
-    color: white;
-    background-color: grey;
+    color: black;
+    background-color: #ffedea;
     text-align: center;
 }
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: grey;
+    background-color: #ffedea;
     display:flex;
     align-items: center;
     justify-content: center;
     height:70px;
 }
-.li:hover{
-    background-color: black;
+    .button:hover{
+    background-color: #782618;
+    color:white; 
+    height:70px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
