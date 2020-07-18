@@ -24,8 +24,8 @@ const MapChart = () => {
 
   useEffect(() => {
     // https://www.bls.gov/lau/
-    csv("/unemployment-by-county-2017.csv").then(counties => {
-      setData(counties);
+    csv("../my-app/public/corona.csv").then(county => {
+      setData(county);
     });
   }, []);
 
@@ -36,11 +36,12 @@ const MapChart = () => {
           {({ geographies }) =>
             geographies.map(geo => {
               const cur = data.find(s => s.id === geo.id);
+              console.log(cur);
               return (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill={colorScale(cur ? cur.unemployment_rate : "#EEE")}
+                  fill={colorScale(cur ? cur.norm_cases :  '#ffedea')}
                 />
               );
             })
