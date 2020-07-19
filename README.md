@@ -1,3 +1,5 @@
+COVID for kids provides a resource for young children to learn about the virus in a digestible, simplified way. Our website includes a simplified map and links to child friendly resources.
+
 **Tack & Problem of Focus**
 
 We chose the education track and we focused on making COVID-19 information more accessible and easy to understand for children
@@ -17,3 +19,6 @@ Presenting simplified information for kids about such a complex problem is a cha
 **Future extensions**
 
 In the future, we would provide more resources for kids to use. We would also develop a background section that describes what COVID-19 is and what kids can do to keep from getting it. Lastly, we would add a section walking kids through how to make their own PPE from home.
+
+
+**DEMO**:
